@@ -5,6 +5,7 @@ import {Second} from '../screens/OnBoarding/Second';
 import {Name} from '../screens/Register/Name/Name';
 import {Gender} from '../screens/Register/Gender/Gender';
 import {Interests} from '../screens/Register/Interests/Interests';
+import { UploadImage } from '../screens/Register/UploadImage';
 
 const Stack = createStackNavigator();
 const Main = () => {
@@ -34,6 +35,11 @@ const Main = () => {
         <Stack.Screen
           name="Interest"
           component={Interests}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Upload"
+          component={UploadImage}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

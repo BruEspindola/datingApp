@@ -4,25 +4,30 @@ import {NextButton} from '../../../components/Button/NextButton';
 import {Title} from '../../../components/Title/Title';
 import {Formik, FormikHelpers} from 'formik';
 import {validationName} from '../../../validations';
-import { BackButton } from '../../../components/Button/BackButton';
+import {BackButton} from '../../../components/Button/BackButton';
+import {atomName} from '../../../context/Atom';
+import {useAtom} from 'jotai';
 
 interface Values {
   name: string;
 }
 
 export const Name = ({navigation}: any) => {
-  const initialValues: Values = {
-    name: '',
+  const [name, setName] = useAtom(atomName);
+
+  const initialValues = {
+    name: name,
   };
 
   const onSubmit = (values: Values, helpers: FormikHelpers<Values>) => {
+    setName(values.name)
     helpers.resetForm();
     navigation.navigate('Gender');
   };
 
   return (
     <SafeView>
-     <BackButton back={navigation}/> 
+      <BackButton back={navigation} />
       <Container>
         <Formik
           initialValues={initialValues}
