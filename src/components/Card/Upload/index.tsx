@@ -12,9 +12,10 @@ import {ModalUpload} from '../../Modal/UploadImage';
 
 interface Props {
   Primary?: boolean;
+  index?: number
 }
 
-export const CardUpload = ({Primary}: Props) => {
+export const CardUpload = ({Primary, index}: Props) => {
   const [visible, setVisible] = useState(false);
 
   const handleImage = () => {

@@ -5,6 +5,7 @@ interface Props {
   Primary?: boolean;
   Title: string;
   OnPress?: () => void;
+  disabled?: boolean
 }
 
 interface PropsIcon {
@@ -13,11 +14,12 @@ interface PropsIcon {
   OnPress?: () => void;
   iconName: string;
   iconColor?: string;
+  disabled?: boolean
 }
 
-export const Button = ({Primary, Title, OnPress}: Props) => {
+export const Button = ({Primary, Title, OnPress, disabled}: Props) => {
   return (
-    <ComponentButton Primary={Primary} onPress={OnPress}>
+    <ComponentButton disabled={disabled} Primary={Primary} onPress={OnPress}>
       <TitleButton Primary={Primary}>{Title}</TitleButton>
     </ComponentButton>
   );

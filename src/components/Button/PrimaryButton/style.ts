@@ -3,6 +3,7 @@ import styled from 'styled-components/native';
 interface Props {
   Primary?: boolean;
   hasIcon?: boolean;
+  disabled?: boolean;
 }
 
 export const ComponentButton = styled.TouchableOpacity<Props>`
@@ -12,6 +13,7 @@ export const ComponentButton = styled.TouchableOpacity<Props>`
   width: 80%;
   height: 59px;
   border-radius: 32px;
+  opacity: ${Props => Props.disabled ? '0.5' : '1'};
   background-color: ${Props => (Props.Primary ? '#4B164C' : '#FAEAF6')};
   padding: ${Props => (Props.hasIcon ? '10px' : '0')};
   gap: ${Props => (Props.hasIcon ? '50px' : '0')}

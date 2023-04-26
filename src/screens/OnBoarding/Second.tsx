@@ -2,14 +2,13 @@ import {TouchableOpacity} from 'react-native';
 import {
   ContainerButton,
   ContainerImage,
-  ContainerSignUp,
   ContainerText,
   Img,
-  SignUpText,
   Title,
 } from './style';
 import {ButtonWithIcon} from '../../components/Button/PrimaryButton';
 import {SafeView} from '../../GlobalStyle';
+import { SignUpButton } from '../../components/Button/SignUpButton';
 
 export const Second = ({navigation}: any) => {
   return (
@@ -17,8 +16,7 @@ export const Second = ({navigation}: any) => {
       <SafeView>
         <ContainerImage>
           <Img
-          Second
-           
+            Second
             source={require('../../../assets/images/onBoarding/OnBoarding2.png')}
           />
         </ContainerImage>
@@ -28,7 +26,7 @@ export const Second = ({navigation}: any) => {
 
         <ContainerButton>
           <ButtonWithIcon
-            OnPress={() => navigation.navigate('Name')}
+            OnPress={() => navigation.navigate('Login')}
             Primary
             iconName="phone"
             Title="Login with Phone"
@@ -39,13 +37,7 @@ export const Second = ({navigation}: any) => {
             iconName="google"
             iconColor="#4B164C"
           />
-
-          <ContainerSignUp>
-            <SignUpText>Don't have an account? </SignUpText>
-            <TouchableOpacity>
-              <SignUpText Link>Sign Up</SignUpText>
-            </TouchableOpacity>
-          </ContainerSignUp>
+          <SignUpButton/>
         </ContainerButton>
       </SafeView>
     </>

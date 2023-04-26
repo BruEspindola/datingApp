@@ -6,6 +6,9 @@ import {Name} from '../screens/Register/Name/Name';
 import {Gender} from '../screens/Register/Gender/Gender';
 import {Interests} from '../screens/Register/Interests/Interests';
 import { UploadImage } from '../screens/Register/UploadImage';
+import { Login } from '../screens/Login';
+import { OTP } from '../screens/OTP';
+import { Home } from '../screens/Home';
 
 const Stack = createStackNavigator();
 const Main = () => {
@@ -40,6 +43,21 @@ const Main = () => {
         <Stack.Screen
           name="Upload"
           component={UploadImage}
+          options={{headerShown: false}}
+        />
+         <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="OTP"
+          component={OTP}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

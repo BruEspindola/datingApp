@@ -12,16 +12,16 @@ export const UploadImage = ({navigation}: any) => {
       <Title title="Upload your photos" />
       <Container>
         <BigCard>
-          <CardUpload Primary />
+          <CardUpload index={1} Primary />
           <DownCard>
-            <CardUpload />
-            <CardUpload />
+            <CardUpload index={6} />
+            <CardUpload index={5} />
           </DownCard>
         </BigCard>
         <MiniCard>
-          <CardUpload />
-          <CardUpload />
-          <CardUpload />
+          <CardUpload index={2} />
+          <CardUpload index={3} />
+          <CardUpload index={4}/>
         </MiniCard>
       </Container>
       <NextButton onPress={() => navigation.navigate('First')} />

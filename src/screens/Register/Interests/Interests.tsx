@@ -119,7 +119,7 @@ export const Interests = ({navigation}: any) => {
             <RenderItem key={item.id} item={item} />
           ))}
         </Container>
-        <NextButton onPress={() => navigation.navigate('Upload')} />
+        <NextButton onPress={() => navigation.navigate('Login')} />
       </SafeView>
     </>
   );

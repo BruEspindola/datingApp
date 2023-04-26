@@ -2,7 +2,6 @@ import styled from 'styled-components/native';
 
 interface Props {
   Primary?: boolean;
-  Link?: boolean;
   Second?: boolean;
 }
 
@@ -41,14 +40,4 @@ export const ContainerButton = styled.View`
   align-items: center;
   flex-direction: column;
   gap: 20px;
-`;
-
-export const ContainerSignUp = styled.View`
-  flex-direction: row;
-`;
-
-export const SignUpText = styled.Text<Props>`
-  font-size: 14px;
-  color: ${Props => (Props.Link ? '#E39ED8' : '#363636')};
-  font-weight: ${Props => (Props.Link ? 'bold' : 'regular')};
 `;
