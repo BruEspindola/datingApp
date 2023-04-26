@@ -28,13 +28,13 @@
 ```
 
 ## 🏳️ Bibliotecas
-|                             |                        |
-|-----------------------------|------------------------|
-|✅React Navigation          |✅ Jotai                |
-|✅Formik                    |⬜ Firebase             | 
-|✅Yup                       |⬜ Axios                | 
-|✅Styled-components         |⬜ StoryBook            | 
-|✅react-native-vector-icons |⬜ Push Notification    |
+|                             |                        |                       |
+|-----------------------------|------------------------|-----------------------|
+|✅React Navigation          |✅ Jotai                |⬜ Firestone           | 
+|✅Formik                    |✅ Firebase             |                       | 
+|✅Yup                       |⬜ Axios                |                       |
+|✅Styled-components         |⬜ StoryBook            |                       |
+|✅react-native-vector-icons |⬜ Push Notification    |                       |
 
 
  
