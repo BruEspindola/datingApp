@@ -10,6 +10,7 @@ import {
 } from './style';
 import {Button} from '@components/Button/PrimaryButton';
 
+
 type RootStackParamList = {
   Second: undefined;
 };
@@ -27,7 +28,7 @@ export const First = ({navigation}: Props) => {
     <SafeAreaView style={{flex: 1, backgroundColor: '#FFF'}}>
       <ContainerImage>
         <Img
-          source={require('../../../assets/images/onBoarding/onBoarding.png')}
+          source={require('@images/onBoarding/onBoarding.png')}
         />
       </ContainerImage>
       <ContainerText Primary>

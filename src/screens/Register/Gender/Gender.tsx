@@ -5,7 +5,8 @@ import {Container, Subtitle, SwitchGender, Symbol} from './style';
 import {NextButton} from '@components/Button/NextButton';
 import {BackButton} from '@components/Button/BackButton';
 import {Error} from './style';
-import {SafeView} from '../../../GlobalStyle';
+import {SafeView} from '@style';
+
 
 export const Gender = ({navigation}: any) => {
   const [male, setMale] = useState(false);

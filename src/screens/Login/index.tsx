@@ -1,7 +1,7 @@
 import {Text, View} from 'react-native';
 import {useAtom} from 'jotai';
 import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
-import {SafeView} from '../../GlobalStyle';
+import {SafeView} from '@style';
 import {Title} from '@components/Title';
 import {InputPhone} from '@components/Input/Phone';
 import {Button} from '@components/Button/PrimaryButton';

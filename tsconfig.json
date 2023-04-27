@@ -7,13 +7,15 @@
       "baseUrl": "./",
       "paths": {
         "@components/*": ["./src/components/*"],
-        "@screens": ["./src/screens/*"],
-        "@assets": ["./src/assets/*"],
+        "@screens/*": ["./src/screens/*"],
+        "@assets/*": ["./src/assets/*"],
+        "@fonts/*": ["./src/theme/fonts"],
         "@validations": ["./src/validations"],
         "@navigatior": ["./src/navigatior"],
         "@helper": ["./src/helper"],
         "@context": ["./src/context"],
-        "@fonts": ["./src/theme/fonts"]
+        "@images/*": ["./src/assets/images/*"],
+        "@style" : ["./src/theme/index"]
       }
     }
 }

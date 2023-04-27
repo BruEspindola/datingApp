@@ -1,4 +1,5 @@
-import {SafeView} from '../../../GlobalStyle';
+import {SafeView} from '@style';
+
 import {BackButton} from '@components/Button/BackButton';
 import {Title} from '@components/Title';
 import {CardUpload} from '@components/Card/Upload';

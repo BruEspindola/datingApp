@@ -1,4 +1,5 @@
-import {SafeView} from '../../../GlobalStyle';
+import {SafeView} from '@style';
+
 import {Container, Error, Input} from './style';
 import {NextButton} from '@components/Button/NextButton';
 import {Title} from '@components/Title';

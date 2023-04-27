@@ -1,5 +1,6 @@
 import OtpInputs from 'react-native-otp-inputs';
-import {SafeView} from '../../GlobalStyle';
+import {SafeView} from '@style';
+
 import {useAtom} from 'jotai';
 import {atomConfirm, atomPhone} from '@context';
 import {useEffect, useState} from 'react';

@@ -6,13 +6,16 @@ module.exports = {
       {
         root: ['./src'],
         alias: [
-          {'@components': './src/components/*'},
-          {'@screens': './src/screens/*'},
-          {'@validations': './src/validations/*'},
-          {'@navigator': './src/navigator/*'},
-          {'@helper': './src/helper/*'},
-          {'@context': './src/context/*'},
-          {'@assets': './src/assets/*'},          
+          {'@components': './src/components'},
+          {'@screens': './src/screens'},
+          {'@validations': './src/validations'},
+          {'@navigator': './src/navigator'},
+          {'@helper': './src/helper'},
+          {'@context': './src/context'},
+          {'@assets': './src/assets'},  
+          {'@images': './src/assets/images'},          
+          {'@style': './src/theme'},          
+
         ],
       },
     ],

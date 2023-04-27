@@ -6,12 +6,13 @@ import {
   Title,
 } from './style';
 import {ButtonWithIcon} from '@components/Button/PrimaryButton';
-import {SafeView} from '../../GlobalStyle';
+import {SafeView} from '@style';
 import {SignUpButton} from '@components/Button/SignUpButton';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import {useEffect, useState} from 'react';
 import {CLI_ID_GOOGLE} from '@helper';
 import auth from '@react-native-firebase/auth';
+
 
 export const Second = ({navigation}: any) => {
   
@@ -33,7 +34,7 @@ export const Second = ({navigation}: any) => {
         <ContainerImage>
           <Img
             Second
-            source={require('@assets/images/onBoarding/OnBoarding2.png')}
+            source={require('@images/onBoarding/OnBoarding2.png')}
           />
         </ContainerImage>
         <ContainerText>
