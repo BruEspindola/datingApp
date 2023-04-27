@@ -1,9 +1,9 @@
 import {useState} from 'react';
 import Icon from 'react-native-vector-icons/SimpleLineIcons';
-import {Title} from '../../../components/Title/Title';
+import {Title} from '@components/Title';
 import {Container, Subtitle, SwitchGender, Symbol} from './style';
-import {NextButton} from '../../../components/Button/NextButton';
-import {BackButton} from '../../../components/Button/BackButton';
+import {NextButton} from '@components/Button/NextButton';
+import {BackButton} from '@components/Button/BackButton';
 import {Error} from './style';
 import {SafeView} from '../../../GlobalStyle';
 

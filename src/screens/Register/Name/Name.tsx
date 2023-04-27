@@ -1,11 +1,11 @@
 import {SafeView} from '../../../GlobalStyle';
 import {Container, Error, Input} from './style';
-import {NextButton} from '../../../components/Button/NextButton';
-import {Title} from '../../../components/Title/Title';
+import {NextButton} from '@components/Button/NextButton';
+import {Title} from '@components/Title';
 import {Formik, FormikHelpers} from 'formik';
-import {validationName} from '../../../validations';
-import {BackButton} from '../../../components/Button/BackButton';
-import {atomName} from '../../../context/Atom';
+import {validationName} from '@validations';
+import {BackButton} from '@components/Button/BackButton';
+import {atomName} from '@context';
 import {useAtom} from 'jotai';
 
 interface Values {

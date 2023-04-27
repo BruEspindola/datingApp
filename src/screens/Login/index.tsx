@@ -2,12 +2,12 @@ import {Text, View} from 'react-native';
 import {useAtom} from 'jotai';
 import auth, {FirebaseAuthTypes} from '@react-native-firebase/auth';
 import {SafeView} from '../../GlobalStyle';
-import {Title} from '../../components/Title/Title';
-import {InputPhone} from '../../components/Input/Phone';
-import {Button} from '../../components/Button/PrimaryButton';
-import {BackButton} from '../../components/Button/BackButton';
-import {SignUpButton} from '../../components/Button/SignUpButton';
-import {atomConfirm, atomPhone} from '../../context/Atom';
+import {Title} from '@components/Title';
+import {InputPhone} from '@components/Input/Phone';
+import {Button} from '@components/Button/PrimaryButton';
+import {BackButton} from '@components/Button/BackButton';
+import {SignUpButton} from '@components/Button/SignUpButton';
+import {atomConfirm, atomPhone} from '@context';
 import {useEffect, useState} from 'react';
 import {ContainerButton, Error, Subtitle} from './style';
 

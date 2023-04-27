@@ -1,12 +1,12 @@
 import OtpInputs from 'react-native-otp-inputs';
 import {SafeView} from '../../GlobalStyle';
 import {useAtom} from 'jotai';
-import {atomConfirm, atomPhone} from '../../context/Atom';
+import {atomConfirm, atomPhone} from '@context';
 import {useEffect, useState} from 'react';
-import {ActivityIndicator, StyleSheet, Text, View} from 'react-native';
-import {Title} from '../../components/Title/Title';
-import {BackButton} from '../../components/Button/BackButton';
-import {Button} from '../../components/Button/PrimaryButton';
+import {StyleSheet} from 'react-native';
+import {Title} from '@components/Title';
+import {BackButton} from '@components/Button/BackButton';
+import {Button} from '@components/Button/PrimaryButton';
 import {ContainerButton, Loading, Subtitle} from './style';
 
 export const OTP = ({navigation}: any) => {

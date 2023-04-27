@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 import PhoneInput from 'react-native-phone-number-input';
-import {atomPhone} from '../../../context/Atom';
+import {atomPhone} from '@context';
 import {useAtom} from 'jotai';
 
 export const InputPhone = () => {

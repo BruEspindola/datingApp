@@ -1,9 +1,9 @@
 import {SafeView} from '../../../GlobalStyle';
-import {BackButton} from '../../../components/Button/BackButton';
-import {Title} from '../../../components/Title/Title';
-import {CardUpload} from '../../../components/Card/Upload';
+import {BackButton} from '@components/Button/BackButton';
+import {Title} from '@components/Title';
+import {CardUpload} from '@components/Card/Upload';
 import {BigCard, Container, DownCard, MiniCard} from './style';
-import {NextButton} from '../../../components/Button/NextButton';
+import {NextButton} from '@components/Button/NextButton';
 
 export const UploadImage = ({navigation}: any) => {
   return (

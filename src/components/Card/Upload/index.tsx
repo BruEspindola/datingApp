@@ -8,7 +8,7 @@ import {
   launchImageLibrary,
 } from 'react-native-image-picker';
 import {useState} from 'react';
-import {ModalUpload} from '../../Modal/UploadImage';
+import {ModalUpload} from '@components/Modal/UploadImage';
 
 interface Props {
   Primary?: boolean;

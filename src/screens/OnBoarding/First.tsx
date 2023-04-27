@@ -8,7 +8,7 @@ import {
   Subtitle,
   Title,
 } from './style';
-import {Button} from '../../components/Button/PrimaryButton';
+import {Button} from '@components/Button/PrimaryButton';
 
 type RootStackParamList = {
   Second: undefined;

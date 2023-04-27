@@ -1,6 +1,6 @@
 import {SafeView} from '../../../GlobalStyle';
-import {NextButton} from '../../../components/Button/NextButton';
-import {Title} from '../../../components/Title/Title';
+import {NextButton} from '@components/Button/NextButton';
+import {Title} from '@components/Title';
 import {Container, ContainerPill, TitlePill} from './style';
 import {useEffect, useState} from 'react';
 import { BackButton } from '../../../components/Button/BackButton';
