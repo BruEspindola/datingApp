@@ -1,6 +1,4 @@
 import {SafeView} from '@style';
-
-import {NextButton} from '@components/Button/NextButton';
 import {Title} from '@components/Title';
 import {Container, ContainerPill, TitlePill} from './style';
 import {useEffect, useState} from 'react';
@@ -120,7 +118,7 @@ export const Interests = ({navigation}: any) => {
             <RenderItem key={item.id} item={item} />
           ))}
         </Container>
-        <NextButton onPress={() => navigation.navigate('Login')} />
+        
       </SafeView>
     </>
   );

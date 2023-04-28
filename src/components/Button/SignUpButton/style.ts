@@ -9,7 +9,8 @@ export const ContainerSignUp = styled.View`
 `;
 
 export const SignUpText = styled.Text<Props>`
-  font-size: 14px;
-  color: ${Props => (Props.Link ? '#E39ED8' : '#363636')};
+  font-size: 16px;
+  color: #FFF;
   font-weight: ${Props => (Props.Link ? 'bold' : 'regular')};
+  font-family: 'Inter-Medium';
 `;

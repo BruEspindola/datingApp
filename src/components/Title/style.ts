@@ -1,9 +1,9 @@
-import styled from "styled-components/native";
+import styled from 'styled-components/native';
 
 export const PrimaryTitle = styled.Text`
-  font-size: 28px;
-  text-align: center;
-  margin-top: 10px;
-  font-weight: bold;
-  color: #4B164C
-`
+  font-size: 38px;
+  color: #010001;
+  top: 30px;
+  left: 12%;
+  font-family: 'Inter-Medium';
+`;

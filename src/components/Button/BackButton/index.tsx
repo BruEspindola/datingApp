@@ -8,7 +8,7 @@ interface Props {
 export const BackButton = ({back}: Props) => {
   return(
     <Container onPress={() => back.goBack()}>
-      <Icon name="arrow-back-ios" size={22} color={'#4B164C'} />
+      <Icon name="arrow-back-ios" size={32} color={'#828693'} />
     </Container>
   )
 }

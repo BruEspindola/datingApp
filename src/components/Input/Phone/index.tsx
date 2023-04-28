@@ -12,11 +12,15 @@ export const InputPhone = () => {
         defaultCode="BR"
         defaultValue={phone}
         value={phone}
+        layout="second"
         onChangeFormattedText={text => setPhone(text)}
         onChangeText={setPhone}
         countryPickerProps={{withAlphaFilter: true}}
         containerStyle={style.container}
         textContainerStyle={style.textContainer}
+        textInputStyle={style.text}
+        codeTextStyle={style.text}
+        countryPickerButtonStyle={style.containerCode}
       />
     </>
   );
@@ -24,16 +28,22 @@ export const InputPhone = () => {
 
 const style = StyleSheet.create({
   container: {
-    height: 79,
-    borderRadius: 19,
-    borderWidth: 3,
-    borderColor: '#E5A5DB',
-    justifyContent: 'center',
-    alignSelf: 'center',
-    
+    backgroundColor: 'transparent',
   },
   textContainer: {
-    borderRadius: 19,
-    backgroundColor: '#FFF',
+    backgroundColor: 'transparent',
+    borderBottomColor: '#000',
+    borderBottomWidth: 2,
+  },
+  text: {
+    padding: 0,
+    fontSize: 20,
+    fontFamily: 'Inter-Regular'
+  },
+  containerCode: {
+    borderBottomWidth: 2,
+    borderBottomColor: '#000',
+    marginRight: 15,
+    width: 80,
   },
 });

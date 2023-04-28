@@ -1,0 +1,57 @@
+import {BackButton} from '@components/Button/BackButton';
+import {GradientButton} from '@components/Button/GradientButton';
+import {Title} from '@components/Title';
+import {atomName} from '@context';
+import {SafeView} from '@style';
+import {validationName} from '@validations';
+import {Formik, FormikHelpers} from 'formik';
+import {useAtom} from 'jotai';
+import {Text, TextInput, View} from 'react-native';
+import {ContainerButton, Error, Input, Subtitle} from './style';
+interface Values {
+  name: string;
+}
+
+export const Fourth = ({navigation}: any) => {
+  const [name, setName] = useAtom(atomName);
+
+  const initialValues = {
+    name: '',
+  };
+
+  const onSubmit = (values: Values, helpers: FormikHelpers<Values>) => {
+    setName(values.name);
+    helpers.resetForm({
+      values
+    });
+    navigation.navigate('Gender');
+  };
+
+  return (
+    <SafeView>
+      <BackButton back={navigation} />
+      <Title title="My first name is" />
+      <View>
+        <Formik
+          initialValues={initialValues}
+          onSubmit={onSubmit}
+          validationSchema={validationName}>
+          {({handleChange, errors, touched, handleSubmit, values}) => (
+            <>
+              <Input onChangeText={handleChange('name')} />
+              {errors.name && touched.name && <Error>{errors.name}</Error>}
+
+              <Subtitle>
+                This is how it will appear in Tinder and you will not be able to
+                change it
+              </Subtitle>
+              <ContainerButton>
+                <GradientButton Text="CONTINUE" onPress={handleSubmit} />
+              </ContainerButton>
+            </>
+          )}
+        </Formik>
+      </View>
+    </SafeView>
+  );
+};
