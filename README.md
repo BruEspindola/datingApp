@@ -31,7 +31,7 @@
 |                             |                        |                       |
 |-----------------------------|------------------------|-----------------------|
 |✅React Navigation          |✅ Jotai                |⬜ Firestone           | 
-|✅Formik                    |✅ Firebase             |                       | 
+|✅Formik                    |✅ Firebase             |⬜ Animations          | 
 |✅Yup                       |⬜ Axios                |                       |
 |✅Styled-components         |⬜ StoryBook            |                       |
 |✅react-native-vector-icons |⬜ Push Notification    |                       |
