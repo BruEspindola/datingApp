@@ -2,73 +2,34 @@ import {SafeView} from '@style';
 import {Title} from '@components/Title';
 import {Container, ContainerPill, TitlePill} from './style';
 import {useEffect, useState} from 'react';
-import { BackButton } from '../../../components/Button/BackButton';
+import {BackButton} from '../../../components/Button/BackButton';
 
 const listInterest = [
-  {
-    id: 1,
-    name: 'Gaming',
-  },
-  {
-    id: 2,
-    name: 'Dancing',
-  },
-  {
-    id: 3,
-    name: 'Language',
-  },
-  {
-    id: 4,
-    name: 'Music',
-  },
-  {
-    id: 5,
-    name: 'Movie',
-  },
-  {
-    id: 6,
-    name: 'Photography',
-  },
-  {
-    id: 7,
-    name: 'Archtecture',
-  },
-  {
-    id: 8,
-    name: 'Fashion',
-  },
-  {
-    id: 9,
-    name: 'Book',
-  },
-  {
-    id: 10,
-    name: 'Writing',
-  },
-  {
-    id: 11,
-    name: 'Nature',
-  },
-  {
-    id: 12,
-    name: 'Painting',
-  },
-  {
-    id: 13,
-    name: 'Football',
-  },
-  {
-    id: 14,
-    name: 'People',
-  },
-  {
-    id: 15,
-    name: 'Animals',
-  },
-  {
-    id: 16,
-    name: 'Gym & Fitness',
-  },
+  {id: 1, name: '90s Kid'},
+  {id: 2, name: 'Harry Potter'},
+  {id: 3, name: 'SoundCloud'},
+  {id: 4, name: 'Spa'},
+  {id: 5, name: 'Self Care'},
+  {id: 6, name: 'Heavy Metal'},
+  {id: 7, name: 'House Parties'},
+  {id: 8, name: 'Gin Tonic'},
+  {id: 9, name: 'Gymnastics'},
+  {id: 10, name: 'Hapkido'},
+  {id: 11, name: 'Hot Yoga'},
+  {id: 12, name: 'Meditation'},
+  {id: 13, name: 'Spotify'},
+  {id: 14, name: 'Sushi'},
+  {id: 15, name: 'Hockey'},
+  {id: 16, name: 'Basketball'},
+  {id: 17, name: 'Slam Poetry'},
+  {id: 18, name: 'Home Workout'},
+  {id: 19, name: 'Aquarium'},
+  {id: 20, name: 'Sneakers'},
+  {id: 21, name: 'Instagram'},
+  {id: 22, name: 'Walking'},
+  {id: 23, name: 'Hot Springs'},
+  {id: 24, name: 'Running'},
+  {id: 25, name: 'Travel'},
 ];
 
 type ItemProps = {
@@ -111,14 +72,13 @@ export const Interests = ({navigation}: any) => {
   return (
     <>
       <SafeView>
-        <BackButton back={navigation}/>
+        <BackButton back={navigation} />
         <Title title="Select up to 5 interests" />
         <Container>
           {listInterest.map(item => (
             <RenderItem key={item.id} item={item} />
           ))}
         </Container>
-        
       </SafeView>
     </>
   );

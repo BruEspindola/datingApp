@@ -1,5 +1,5 @@
 import {BackButton} from '@components/Button/BackButton';
-import {OTP} from '@screens/OTP';
+import {OTP} from '@components/OTP';
 import {Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 

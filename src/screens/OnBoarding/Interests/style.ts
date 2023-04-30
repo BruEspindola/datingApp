@@ -4,16 +4,18 @@ interface Props{
 }
 
 export const ContainerPill = styled.TouchableOpacity<Props>`
-padding: 15px;
-border: ${Props => Props.isSelected ? '1px solid #DD88CF' : '1px solid #c3c3c3'};
+padding: 10px 20px;
+border: ${Props => Props.isSelected ? '3px solid #EA5B6E' : '3px solid #c3c3c3'};
 width: auto;
 border-radius: 30px;
 margin-bottom: 18px;
-background: ${Props => Props.isSelected ? '#DD88CF' : 'transparent'}
+align-items: baseline;
 `
 export const TitlePill = styled.Text<Props>`
-  font-size: 16px;
-  color:  ${Props => Props.isSelected ? '#FFF' : '#000'}
+  font-size: 19px;
+  color:  ${Props => Props.isSelected ? '#EA5B6E' : '#C6C5C7'};
+  font-family: 'Poppins-Bold';
+  font-weight: bold;
 `;
 
 export const Container = styled.View`
@@ -21,7 +23,7 @@ export const Container = styled.View`
   top: 50px; 
   flex-direction: row;
   width: 90%;
-  align-self: center;
+  align-self: flex-start;
   flex-wrap: wrap;
   column-gap: 20px
 `

@@ -24,7 +24,7 @@ export const Fourth = ({navigation}: any) => {
     helpers.resetForm({
       values
     });
-    navigation.navigate('Gender');
+    navigation.navigate('Birthday');
   };
 
   return (
