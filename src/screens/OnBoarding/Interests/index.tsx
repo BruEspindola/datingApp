@@ -3,6 +3,7 @@ import {Title} from '@components/Title';
 import {Container, ContainerPill, TitlePill} from './style';
 import {useEffect, useState} from 'react';
 import {BackButton} from '../../../components/Button/BackButton';
+import {GradientButton} from '@components/Button/GradientButton';
 
 const listInterest = [
   {id: 1, name: '90s Kid'},
@@ -47,7 +48,7 @@ export const Interests = ({navigation}: any) => {
     } else {
       setHasMaxSelections(false);
     }
-  }, []);
+  });
 
   const handleItemPress = (id: number) => {
     const isSelected = selectId.includes(id);
@@ -73,12 +74,17 @@ export const Interests = ({navigation}: any) => {
     <>
       <SafeView>
         <BackButton back={navigation} />
-        <Title title="Select up to 5 interests" />
+        <Title title="Interests" />
         <Container>
           {listInterest.map(item => (
             <RenderItem key={item.id} item={item} />
           ))}
         </Container>
+        <GradientButton
+          onPress={() => navigation.push('Welcome')}
+          Text={`CONTINUE ${selectId.length.toString()}/5`}
+          disabled={!hasMaxSelections}
+        />
       </SafeView>
     </>
   );

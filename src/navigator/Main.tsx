@@ -8,6 +8,7 @@ import {Third} from '@screens/OnBoarding/Third';
 import {Fourth} from '@screens/OnBoarding/Fourth';
 import {Birthday} from '@screens/OnBoarding/Birthday';
 import { Gender } from '@screens/OnBoarding/Gender';
+import { Welcome } from '@screens/Welcome';
 
 const Stack = createStackNavigator();
 const Main = () => {
@@ -26,6 +27,7 @@ const Main = () => {
         <Stack.Screen name="Birthday" component={Birthday} options={option} />
         <Stack.Screen name="Gender" component={Gender} options={option} />
         <Stack.Screen name="Interest" component={Interests} options={option} />
+        <Stack.Screen name="Welcome" component={Welcome} options={option} />
 
       </Stack.Navigator>
     </NavigationContainer>

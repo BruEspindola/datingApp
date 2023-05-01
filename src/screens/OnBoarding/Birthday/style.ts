@@ -10,7 +10,7 @@ export const Input = styled.TextInput`
   width: 45%;
   align-self: center;
   text-align: center;
-  font-size: 30px;
+  font-size: 28px;
 `;
 
 export const Subtitle = styled.Text`
