@@ -15,6 +15,7 @@ module.exports = {
           {'@assets': './src/assets'},  
           {'@images': './src/assets/images'},          
           {'@style': './src/theme'},          
+          {'@services': './src/services'},          
 
         ],
       },

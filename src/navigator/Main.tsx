@@ -9,6 +9,7 @@ import {Fourth} from '@screens/OnBoarding/Fourth';
 import {Birthday} from '@screens/OnBoarding/Birthday';
 import { Gender } from '@screens/OnBoarding/Gender';
 import { Welcome } from '@screens/Welcome';
+import { Home } from '@screens/Home';
 
 const Stack = createStackNavigator();
 const Main = () => {
@@ -28,7 +29,7 @@ const Main = () => {
         <Stack.Screen name="Gender" component={Gender} options={option} />
         <Stack.Screen name="Interest" component={Interests} options={option} />
         <Stack.Screen name="Welcome" component={Welcome} options={option} />
-
+        <Stack.Screen name="Home" component={Home} options={option} />
       </Stack.Navigator>
     </NavigationContainer>
   );

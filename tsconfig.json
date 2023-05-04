@@ -15,7 +15,8 @@
         "@helper": ["./src/helper"],
         "@context": ["./src/context"],
         "@images/*": ["./src/assets/images/*"],
-        "@style" : ["./src/theme/index"]
+        "@style" : ["./src/theme/index"],
+        "@services": ["./src/services"]
       }
     }
 }

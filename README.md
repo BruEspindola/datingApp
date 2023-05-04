@@ -25,14 +25,14 @@
 ```bash    
   npm run andoid ou npm run ios
   
-```
+```sd
 
 ## 🏳️ Bibliotecas
 |                             |                        |                       |
 |-----------------------------|------------------------|-----------------------|
 |✅React Navigation          |✅ Jotai                |⬜ Firestone           | 
 |✅Formik                    |✅ Firebase             |⬜ Animations          | 
-|✅Yup                       |⬜ Axios                |                       |
+|✅Yup                       |✅ Axios                |                       |
 |✅Styled-components         |⬜ StoryBook            |                       |
 |✅react-native-vector-icons |⬜ Push Notification    |                       |
 

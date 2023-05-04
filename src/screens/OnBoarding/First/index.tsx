@@ -9,13 +9,19 @@ import {
   Subtitle,
 } from './style';
 import { SignUpButton } from '@components/Button/SignUpButton';
+import {GoogleSignin} from '@react-native-google-signin/google-signin';
+import {useEffect} from 'react';
+import {CLI_ID_GOOGLE} from '@helper';
+import auth from '@react-native-firebase/auth';
 
 type RootStackParamList = {
   Second: undefined;
+  Home: undefined
 };
 type DetailsScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
-  'Second'
+  'Second',
+  'Home'
 >;
 
 interface Props {
@@ -23,6 +29,19 @@ interface Props {
 }
 
 export const First = ({navigation}: Props) => {
+
+  useEffect(() => {
+    GoogleSignin.configure({
+      webClientId: CLI_ID_GOOGLE,
+    });
+  }, []);
+
+  const handleLoginGoogle = async () => {
+    const {idToken} = await GoogleSignin.signIn();
+    const googleCredential = auth.GoogleAuthProvider.credential(idToken);
+    return auth().signInWithCredential(googleCredential);
+  };
+
   return (
     <GradientView>
       <Container>
@@ -32,8 +51,7 @@ export const First = ({navigation}: Props) => {
           how we process your data in our Privacy Policy and Cookies Policy.
         </Subtitle>
         <ContainerButton>
-          <Button Title="SIGN IN WITH APPLE" />
-          <Button Title="SIGN IN WITH FACEBOOK" />
+          <Button Title="SIGN IN WITH GOOGLE" OnPress={() => handleLoginGoogle()} />
           <Button
             Title="SIGN IN WITH PHONE NUMBER"
             OnPress={() => navigation.navigate('Second')}

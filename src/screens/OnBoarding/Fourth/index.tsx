@@ -6,8 +6,10 @@ import {SafeView} from '@style';
 import {validationName} from '@validations';
 import {Formik, FormikHelpers} from 'formik';
 import {useAtom} from 'jotai';
-import {Text, TextInput, View} from 'react-native';
+import {View} from 'react-native';
 import {ContainerButton, Error, Input, Subtitle} from './style';
+import { firebase } from '@react-native-firebase/auth';
+
 interface Values {
   name: string;
 }
@@ -19,11 +21,11 @@ export const Fourth = ({navigation}: any) => {
     name: '',
   };
 
-  const onSubmit = (values: Values, helpers: FormikHelpers<Values>) => {
+  const onSubmit = async (values: Values, helpers: FormikHelpers<Values>) => {
     setName(values.name);
-    helpers.resetForm({
-      values
-    });
+
+    await firebase.auth().currentUser?.updateProfile({displayName: name})
+   
     navigation.navigate('Birthday');
   };
 

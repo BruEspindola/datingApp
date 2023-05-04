@@ -16,6 +16,10 @@ export const Subtitle = styled.Text`
   font-size: 20px;
 `;
 
+export const Container = styled.View`
+  margin-top: 50px;
+`;
+
 export const ContainerRules = styled.View`
   flex-direction: row;
   column-gap: 16px;
