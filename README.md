@@ -30,11 +30,11 @@
 ## 🏳️ Bibliotecas
 |                             |                        |                       |
 |-----------------------------|------------------------|-----------------------|
-|✅React Navigation          |✅ Jotai                |⬜ Firestone           | 
-|✅Formik                    |✅ Firebase             |⬜ Animations          | 
+|✅React Navigation          |✅ Jotai                |                       | 
+|✅Formik                    |✅ Firebase             |                       | 
 |✅Yup                       |✅ Axios                |                       |
 |✅Styled-components         |⬜ StoryBook            |                       |
-|✅react-native-vector-icons |⬜ Push Notification    |                       |
+|✅react-native-vector-icons |                         |                       |
 
 
  

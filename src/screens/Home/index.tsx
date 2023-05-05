@@ -9,10 +9,11 @@ import Swiper from 'react-native-deck-swiper';
 export const Home = () => {
   const [characters, setCharacter] = useState<[] | Character[]>([]);
 
+
   useEffect(() => {
     (async () => {
       const character = await getAllCharacter();
-      setCharacter(character);
+      setCharacter(() => character);
     })();
   }, []);
 
@@ -27,7 +28,9 @@ export const Home = () => {
         backgroundColor="transparent"
         cardVerticalMargin={80}
         stackSize={3}
-        stackSeparation={15}
+        onSwipedAll={() => {
+          
+        }}
         overlayLabels={{
           left: {
             title: 'NOPE',
@@ -76,6 +79,7 @@ export const Home = () => {
             },
           },
         }}
+        cardIndex={characters?.length}
         cards={characters}
         renderCard={card => {
           return (

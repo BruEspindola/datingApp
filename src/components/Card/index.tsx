@@ -1,23 +1,26 @@
-import { Image, StyleSheet, Animated } from "react-native";
-import { Container, DescriptionContainer, Gradient, ImageCharacter, Live, LiveContainer, Name } from "./style";
-import { Character } from "@services";
+import {Image, StyleSheet, Animated} from 'react-native';
+import {
+  Container,
+  DescriptionContainer,
+  Gradient,
+  ImageCharacter,
+  Live,
+  LiveContainer,
+  Name,
+} from './style';
+import {Character} from '@services';
 
 interface Props {
-  Character: Character,
+  Character: Character;
 }
 
 export const Card = ({Character}: Props) => {
-
   return (
     <Container as={Animated.View} style={style.card}>
-      <ImageCharacter source={{uri: Character?.image}} resizeMode="cover" />
-      <Gradient/>
+      <ImageCharacter source={{uri: Character?.imageUrl}} resizeMode="cover" />
+      <Gradient />
       <DescriptionContainer>
         <Name>{Character?.name}</Name>
-        <LiveContainer>
-          <Image source={require('@images/Residence.png')}/>
-          <Live>{`Lives in ${Character?.location.name}`}</Live>
-        </LiveContainer>
       </DescriptionContainer>
     </Container>
   );
@@ -34,4 +37,4 @@ const style = StyleSheet.create({
     shadowOpacity: 0.3,
     elevation: 2,
   },
-})
+});

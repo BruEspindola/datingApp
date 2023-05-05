@@ -57,7 +57,7 @@ export const First = ({navigation}: Props) => {
             OnPress={() => navigation.navigate('Second')}
           />
           <ContainerTextRegister>
-           <SignUpButton/>
+           <SignUpButton go={navigation}/>
           </ContainerTextRegister>
         </ContainerButton>
       </Container>

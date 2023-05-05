@@ -1,12 +1,14 @@
 import { TouchableOpacity } from "react-native";
 import { ContainerSignUp, SignUpText } from "./style";
-
-export const SignUpButton = () => {
+interface Props {
+  go: any;
+}
+export const SignUpButton = ({go}: Props) => {
   return (
     <ContainerSignUp>
       <SignUpText>Don't have an account? </SignUpText>
       <TouchableOpacity>
-        <SignUpText Link>Sign Up</SignUpText>
+        <SignUpText onPress={() => go.navigate('Home')} Link>Sign Up</SignUpText>
       </TouchableOpacity>
     </ContainerSignUp>
   );

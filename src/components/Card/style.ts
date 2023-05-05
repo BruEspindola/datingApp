@@ -42,7 +42,7 @@ export const Name = styled.Text`
   font-size: 38px;
   color: #FFF;
   font-family: 'Inter-SemiBold';
-  width: 90%;
+  width: 100%;
 `;
 
 export const LiveContainer = styled.View`
