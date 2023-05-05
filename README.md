@@ -1,6 +1,7 @@
 # :zap: Dating App (React Native)
 
 
+
 > Este repositório tem o intuito de armazenar os código de um app de namoro, com finalidade de estudo e aprimoramento em React Native.
 
 
@@ -25,16 +26,22 @@
 ```bash    
   npm run andoid ou npm run ios
   
-```sd
+```
 
 ## 🏳️ Bibliotecas
-|                             |                        |                       |
-|-----------------------------|------------------------|-----------------------|
-|✅React Navigation          |✅ Jotai                |                       | 
-|✅Formik                    |✅ Firebase             |                       | 
-|✅Yup                       |✅ Axios                |                       |
-|✅Styled-components         |                         |                       |
-|✅react-native-vector-icons |                         |                       |
+|                             |                        |                       
+|-----------------------------|------------------------|
+|✅React Navigation          |✅ Jotai                | 
+|✅Formik                    |✅ Firebase             | 
+|✅Yup                       |                           
+|✅Styled-components         |                           
+|✅react-native-vector-icons |                 
+
+
+ 
+
+
+
 
 
  
